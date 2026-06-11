@@ -64,35 +64,7 @@ async function converter() {
                 }
             );
 
-        // imagemConvertida =
-        //     await response.blob();
-
-        // document.getElementById(
-        //     'status'
-        // ).innerText =
-        //     'Imagem convertida com sucesso!';
-
-        // btnBaixar.disabled =
-        //     false;
-
-        // const previewURL =
-        //     URL.createObjectURL(
-        //         imagemConvertida
-        //     );
-
-        // const preview =
-        //     document.getElementById(
-        //         'preview'
-        //     );
-
-        // preview.src =
-        //     previewURL;
-
-        // preview.style.display =
-        //     'block';
-
-            const data =
-    await response.json();
+    const data = await response.json();
 
         imagemConvertida =
             data.image;
@@ -124,31 +96,6 @@ async function converter() {
             'Erro na conversão.';
     }
 }
-
-// function baixar() {
-
-//     if (!imagemConvertida)
-//         return;
-
-//     const url =
-//         URL.createObjectURL(
-//             imagemConvertida
-//         );
-
-//     const a =
-//         document.createElement('a');
-
-//     a.href = url;
-
-//     a.download =
-//         'imagem-convertida.jpg';
-
-//     document.body.appendChild(a);
-
-//     a.click();
-
-//     a.remove();
-// }
 
 function baixar() {
 

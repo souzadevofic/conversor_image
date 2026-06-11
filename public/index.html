@@ -10,50 +10,32 @@
 
 <body>
 
-    <div class="container">
+    <header>
+        <img class="logo_ativmob" src="./img/logo_ativmob.png" alt="ativmob">
+    </header>
 
-        <h1>Conversor de Imagens</h1>
+    <section class="container">
 
-        <input
-            type="file"
-            id="image"
-            accept="image/*">
+        <div class="container_bloco">
+            <h1>Conversor de Imagens</h1>
+            <input type="file" id="image"accept="image/*">
 
-        <select id="size">
+            <select id="size">
+                <option value="5">5 KB</option>
+                <option value="10">10 KB</option>
+                <option value="15">15 KB</option>
+            </select>
 
-            <option value="5">
-                5 KB
-            </option>
+            <button id="btnConverter">Converter</button>
+            <button id="btnBaixar"disabled>Baixar</button>
 
-            <option value="10">
-                10 KB
-            </option>
+            <p id="status"></p>
 
-            <option value="15">
-                15 KB
-            </option>
+            <img id="preview" style="display:none;">
+                
+        </div>
 
-        </select>
-
-        <button id="btnConverter">
-            Converter
-        </button>
-
-        <button
-            id="btnBaixar"
-            disabled>
-            Baixar
-        </button>
-
-        <p id="status"></p>
-
-        <img
-            id="preview"
-            style="display:none;">
-
-    </div>
-
+    </section>
     <script src="script.js"></script>
-
 </body>
 </html>

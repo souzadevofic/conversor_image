@@ -2,51 +2,62 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-}
-
-body{
-
     font-family:Arial, sans-serif;
-
-    background:#f4f4f4;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    height:100vh;
 }
 
-.container{
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    background:white;
-
+.container_bloco {
+    margin-top: 7rem;
+    background: #2D4279;
     padding:30px;
-
     border-radius:10px;
-
     box-shadow:0 0 10px rgba(0,0,0,.1);
-
     display:flex;
+    justify-content: center;
     flex-direction:column;
-
     gap:15px;
-
     width:400px;
+    
 }
 
+.container_bloco > h1 {
+    color: #f4f4f4;
+    text-align: center;
+}
+
+.container_bloco > button {
+    border: none;
+    border-radius: 5px;
+}
+
+.container_bloco > select {
+    width: 30%;
+    height: 30%;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_ativmob{
+    height: 8rem;
+    width: 15rem;
+}
 button{
-
     padding:10px;
-
     cursor:pointer;
 }
 
 img{
-
     width:100%;
-
     margin-top:10px;
-
     border-radius:8px;
 }
